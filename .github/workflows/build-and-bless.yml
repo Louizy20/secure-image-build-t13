@@ -45,7 +45,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPO }}:${{ env.IMAGE_SHA }}
-          args: --severity-threshold=high --fail-on=all
+          args: --severity-threshold=low --fail-on=all
 
       # Needed because scripts/snyk_scan_and_bless.sh calls the Snyk CLI
       - name: Install Snyk CLI
