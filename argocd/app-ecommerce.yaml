@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-org/your-repo.git   # <-- CHANGE to your repo URL
+    repoURL: https://github.com/Louizy20/secure-image-build-t13.git   # <-- CHANGE to your repo URL
     targetRevision: main
     path: charts/ecommerce-app
     helm:
